@@ -1,11 +1,18 @@
 # erfcx
 go implementation of the scaled complementary error function
 
+![graph](erfcx.png)
+```
+    erfcx(x) is shown in blue, with the limits 2*exp(x*x) for negative x values and 
+    (1/√π)(1/x) for large x values
+```
+
  Package erfcx provides the scaled complementary error function for float64.
 
  This is a port of erfcx.c from libcerf-5.1 to go.
- Original documentation follows:
-
+ 
+## Original documentation
+```
  Library libcerf:
    Compute complex error functions, based on a new implementation of
    Faddeeva's w_of_z. Also provide Dawson and Voigt functions.
@@ -46,3 +53,4 @@ go implementation of the scaled complementary error function
 
  Website:
    http://apps.jcns.fz-juelich.de/libcerf
+```
